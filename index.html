@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultoria Global</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #0056b9;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        header img {
+            max-width: 150px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #004a9f;
+            padding: 0.5rem 0;
+        }
+        nav a {
+            color: rgb(213, 154, 17); 
+            margin: 0 1rem;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .hero {
+            text-align: center;
+            padding: 4rem 2rem;
+            color: rgba(23, 106, 184, 0.89);
+            background: url('banner.jpg') no-repeat center center/cover;
+        }
+        .hero h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+        .hero p {
+            font-size: 1.2rem;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 2rem;
+        }
+        .service {
+            background: rgb(231, 225, 225);
+            padding: 1rem;
+            box-shadow: 0 2px 5px rgba(74, 79, 84, 0.985); 
+            border-radius: 8px;
+            text-align: center;
+        }
+        .service h3 {
+            color: #0b55a5;
+        }
+        .projects {
+            padding: 2rem;
+            background-color: #fafafa;
+        }
+        .projects h2 {
+            text-align: center;
+            color: #0c4fcb; ---------
+        }
+        .project-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        .project {
+            background: rgba(0, 93, 174, 0.136);
+            padding: 1rem;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            text-align: center;
+        }
+        .project img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        .project p {
+            margin-top: 0.5rem;
+            color: #333;
+        }
+        .contact {
+            background-color: #0056b3;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+        .contact form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .contact input, .contact textarea, .contact button {
+            width: 100%;
+            padding: 0.8rem;
+            margin: 0.5rem 0;
+            border: none;
+            border-radius: 4px;
+        }
+        .contact button {
+            background-color: #004a9f;
+            color: white;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+        .contact button:hover {
+            background-color: #003d88;
+        }
+        .schedule {
+            background-color: #e6f7ff;
+            padding: 2rem;
+            text-align: center;
+        }
+        .schedule h2 {
+            color: #0056b3;
+        }
+        .schedule a {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.8rem 1.5rem;
+            background-color: #0056b3;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+        .schedule a:hover {
+            background-color: #003d88;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+    </style>
+</head>
+<body>
+    <img src="c:\Users\pedro\OneDrive\Imagens\Design template.png" style="width: 100%; border-radius: 1px; margin-bottom: -2em;">
+    <header>
+        <h1>Bem-Vindo a Inova</h1>
+        <p>Transformando seu negócio através de seus dados </p>
+    </header>
+
+    <nav>
+        <a href="#services">Serviços</a>
+        <a href="#about">Sobre</a>
+        <a href="#projects">Projetos</a>
+        <a href="#contact">Contato</a>
+        <a href="#schedule">Agendar Reunião</a>
+    </nav>
+
+    <section class="hero">
+        <h1>Consultoria e Desenvolvimento Para o Seu Negócio!</h1>
+        <p>Oferecemos soluções personalizadas para atender às suas necessidades e Inovar seu negócio através de dados.</p>
+    </section>
+
+    <section id="services" class="services">
+        <div class="service">
+            <h3>Gestão de RH</h3>
+            <p>Ajudamos sua empresa a alcançar a melhor gestão dos seus funcionários através de dados.</p>
+        </div>
+        <div class="service">
+            <h3>Desenvolvimento estratégicos de Projetos</h3>
+            <p>Criação de sistemas personalizados, e dashboardes, para otimizar suas operações.</p>
+        </div>
+        <div class="service">
+        <h3>Gestão Financeira </h3>
+            <p>Analise e comprevisões financeiras, administração de orçamentos, facilitando o melhor planejamento nas tomadas de decisões, e tendo seus dados na mão, onde quer que esteja.</p>
+    </div>
+    <div class="service">
+        <h3>Gestão de Obras</h3>
+            <p>Sendo uma das nossas especialidades, te ajudamos com o andar da sua obra, sendo controle orçamentário, controle de materiais, e cronogramas.</p>
+    </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <h2>Projetos Desenvolvidos Por Nós</h2>
+    <div class="project-gallery">
+
+        <div class="project">
+        <img src="c:\Users\pedro\OneDrive\Imagens\Power Bi - RH.png" alt="Projeto 1"> <!--Dashboard sobre RH-->
+        <p>Projeto feito para uma empresa de médio porte, para que o RH possa análisar dados informativos de seus colaboradores.</p>
+    </div>
+
+    <div class="project">
+        <img src="c:\Users\pedro\OneDrive\Imagens\Sundaraimports.png" alt="Projeto 2"> <!--Dashboard sobre loja de importação-->
+            <p>Projeto desenhado e feito para que uma loja de importação possa acompanhar seus dados em tempo real.</p>
+    </div>
+
+    <div class="project">
+        <img src="c:\Users\pedro\OneDrive\Imagens\vendas e varejo.png" alt="Projeto 3"> <!--Dashboard sobre vendas comerciais-->
+            <p>Projeto feito para uma empresa de pequeno porte da área de varejo, para ver seus produtos, faturamentos, e localização das áreas que ela mais fatura.</p>
+    </div>
+
+        </section>
+
+        <section id="projects" class="projects">
+    <div class="project-gallery">
+
+    <div class="project">
+        <img src="c:\Users\pedro\OneDrive\Imagens\LOCAÇÃO DE CARROS.png" alt="Projeto 4"><!--Dashboard sobre locação de veiculos-->
+        <p>Projeto feito para uma loja de locação de veiculos, para análisar dados, e tempos, nos quais mais faturam.</p>
+    </div>
+
+    <div class="project">
+        <img src="c:\Users\pedro\OneDrive\Imagens\VENDAS 2.png" alt="Projeto 5"><!--Dashboard sobre faturamento e vendas-->
+        <p>Projeto feito e desenhado para uma empresa de médio porte, para análisar seus faturamentos, metas atingidas, e vendedores que mais vendem e se destacam.</p>
+    </div>
+
+    <div class="project">
+        <img src="c:\Users\pedro\OneDrive\Imagens\DAHS FACULDADE.png" alt="Projeto 6"> <!--Dashboard sobre financeiro de faculdade-->
+        <p>Projeto feito para um Polo de Estudos, de uma instituição de estudos, para analisar e ver os cursos que mais vendem, e seus maiores faturamentos.</p>
+    </div>
+
+</section>
+
+    <section id="schedule" class="schedule">
+        <h2>Agendar Reunião</h2>
+        <p>Escolha um horário que funcione para você e agende uma reunião conosco. Lembrando que nesse começo de ano estamos com agenda disponivel apartir das 18 horas</p>
+        <a href="https://calendly.com/" target="_blank">Marcar Reunião</a>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Entre em Contato</h2>
+        <form action="#" method="post">
+            <input type="text" name="name" placeholder="Seu Nome" required>
+            <input type="email" name="email" placeholder="Seu Email" required>
+            <textarea name="message" placeholder="Sua Mensagem" rows="5" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Consultoria Global. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
